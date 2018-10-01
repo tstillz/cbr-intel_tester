@@ -1,0 +1,39 @@
+{
+  "cb_url": "",
+  "cb_api": "",
+  "year": 2018,
+  "month": 9,
+  "day": 1,
+  "queries":{
+      "powershell_usage": {
+          "query": "process_name:powershell.exe",
+          "desc": "Review all occurrences of the powershell process being invoked",
+          "ref": ""
+      },
+      "cscript_wscript": {
+          "query": "process_name:cscript.exe OR process_name:wscript.exe",
+          "desc": "Review all occurrences of wscript or cscript being invoked",
+          "ref": "" 
+      },
+      "mshta": {
+          "query": "process_name:mshta.exe",
+          "desc": "Review all occurrences of mshta being invoked",
+          "ref": ""
+      },
+      "jp_cert_initial_investigation": {
+          "query": "tasklist.exe OR ipconfig.exe OR systeminfo.exe OR cmdline:query OR cmdline:\"net start\" OR cmdline:\"net time\" OR netstat.exe OR whoami OR ver.exe",
+          "desc": "JP CERT Initial Investigation: Top Ten",
+          "ref": "https://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html"
+      },
+      "jp_cert_reconnaissance": {
+          "query": "dir.exe OR cmdline:\"net view\" OR ping.exe OR cmdline:\"net use\" OR cmdline:\"net user\" OR cmdline:\"net localgroup\" OR cmdline:\"net group\" OR cmdline:\"net config\" OR cmdline:\"net share\"",
+          "desc": "JP CERT Reconnaissance: Top Ten",
+          "ref": "https://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html"
+      },
+      "jp_cert_spread_of_infection": {
+          "query": "at.exe OR reg.exe OR wmic.exe OR wusa.exe OR cmdline:netsh OR sc.exe OR rundll32.exe",
+          "desc": "JP CERT Spread of Infection: Top Ten",
+          "ref": "https://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html"
+      }
+  }
+}
