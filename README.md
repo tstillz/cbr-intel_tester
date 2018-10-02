@@ -1,5 +1,5 @@
 # Carbon Black Response: Intel Tester
-This script is designed to take a json collection of Carbon Black Response queries and run them daty by day to review total matches per day. This can be used to test out new IOC's, baseline user/process behaviors and much more. The script works by taking a list of queries defined in your `config.json` file and using your defined start date to run a day by day check on each query. The results are saved to a csv file for you to review. 
+This script is designed to take a json collection of Carbon Black Response queries and run them day by day to review total matches per day. This can be used to test out new IOC's, baseline user/process behaviors and much more. The script works by taking a list of queries defined in your `config.json` file and using your defined start date to run a day by day check on each query. The results are saved to a csv file for you to review. 
 
 This script is related to the blog post: https://blog.stillztech.com/2018/10/carbon-black-response-intel-tester.html 
 
